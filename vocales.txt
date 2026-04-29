@@ -1,0 +1,21 @@
+let frase = "paralelogramo"; 
+let vocales = ["a","e","i","o","u"]; 
+let contadorVocales = 0; 
+
+function contarVocales (palabra) {
+    frase = palabra.toLowerCase(); 
+
+    for (let i = 0; i < frase.length; i++) {
+        for (let v = 0; v < vocales.length; v++) {
+            if (frase[i] === vocales[v]) { 
+                contadorVocales++; 
+            }//if 
+        }//for aninado 
+    }//for 
+
+    return contadorVocales; 
+ }//contarVocales
+
+ console.log("Palabra:", frase)
+ console.log("Total de vocales en la palabra: ", contarVocales(frase)); 
+ 
